@@ -1,0 +1,115 @@
+#Notes
+
+Escape What it does.
+\\ Backslash (\)
+\' Single- quote (')
+\" Double- quote (")
+\a ASCII bell (BEL)
+\b ASCII backspace (BS)
+\f ASCII formfeed (FF)
+\n ASCII linefeed (LF)
+\N{name} Character named name in the Unicode database (Unicode only)
+\r ASCII carriage return (CR)
+\t ASCII horizontal tab (TAB)
+\uxxxx Character with 16- bit hex value xxxx (Unicode only)
+\Uxxxxxxxx Character with 32- bit hex value xxxxxxxx (Unicode only)
+\v ASCII vertical tab (VT)
+\ooo Character with octal value oo
+\xhh Character with hex value hh
+
+**
+What’s the difference between argv and raw_input()?
+The difference has to do with where the user is required to give input. If they give your script
+inputs on the command line, then you use argv. If you want them to input using the keyboard
+while the script is running, then use raw_input().
+
+**
+close—Closes the fi le. Like File- >Save.. in your editor.
+ • read—Reads the contents of the fi le. You can assign the result to a variable.
+ • readline—Reads just one line of a text fi le.
+ • truncate—Empties the fi le. Watch out if you care about the fi le.
+ • write(stuff)—Writes stuff to the fi le
+
+**
+What are the modifi ers to the fi le modes we can use?
+The most important one to know for now is the + modifi er, so you can do 'w+', 'r+', and 'a+'.
+This will open the fi le in both read and write mode and, depending on the character used, position the fi le in different ways.
+**
+List of functions in Python
+
+Truth Terms
+ • and
+ • or
+ • not
+ • != (not equal)
+ • == (equal)
+ • >= (greater- than- equal)
+ • <= (less- than- equal)
+ • True
+ • False
+ 
+Truth Tables
+NOT 			True?
+not False 		True
+not True 		False
+
+OR True?
+True or False 	True
+True or True 	True
+False or True 	True
+False or False 	False
+
+AND True?
+True and False 	False
+True and True 	True
+False and True 	False
+False and False False
+
+NOT OR True?
+not (True or False) False
+not (True or True) False
+not (False or True) False
+not (False or False) True
+
+NOT AND True?
+not (True and False) True
+not (True and True) False
+not (False and True) True
+not (False and False) True
+
+!= True?
+1 != 0 			True
+1 != 1 			False
+0 != 1 			True
+0 != 0 			False
+
+== True?
+1 == 0 			False
+1 == 1 			True
+0 == 1 			False
+0 == 0 			True
+
+ELIF
+
+The elif statement allows you to check multiple expressions 
+for TRUE and execute a block of code as soon as one of the 
+conditions evaluates to TRUE
+
+What happens if multiple elif blocks are True?
+Python starts at the top and runs the first block that is True, 
+so it will run only the first one
+
+IF/ ELSE
+
+Every if- statement must have an else
+If this else should never be run because it doesn’t make sense, then you must use a die
+function in the else that prints out an error message and dies, just like we did in the last
+exercise. This will find many errors.
+
+Never nest if- statements more than two deep.
+Move the second if into another function instead.
+
+Keep them simple, if variables are complex calculations, define them earlier and just put the variable name into your IF/
+
+Use WHILE loop only to loop forever (so probably never)
+Use for-loop for all other loops.

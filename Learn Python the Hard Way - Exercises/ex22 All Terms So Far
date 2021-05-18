@@ -1,0 +1,46 @@
+1) Print "X"
+# This prints whatever is in the quotations
+
+2) %X within brackets
+# You can assign % to a variable that's defined outside of the quotations
+# %s = string, %r = raw variable
+
+3)	\n = new line within string
+	\t = tabbed in
+	\\ = backslash in string (so it doesn't start a new line)
+	
+
+4) raw_input() 
+# Prompts the user to input data
+# if you write X = raw_input() then the data is stored to a variable
+e.g. age = raw_input("How old are you?")
+
+5) from sys import argv
+this uses the inputs that the user types in order to return innformation about what is being searched
+e.g script, first, second, third = argv
+-- script is what is running, then 1st, 2nd and 3rd are the varaible the user inputs
+-- print "The script is called:" script...
+
+5) open(filename) | read() | truncate() | len() | write()
+	exists() | close()
+
+6) def - defines a function
+def 	cheese_and_crackers(cheese_count, boxes_of_crackers):
+		print "You have %d cheeses!" % cheese_count
+		
+		Inside a function the variable is temporary
+		So for ex:
+		
+		def secret_formula(started):
+			jelly_beans = started * 500
+			jars = jelly_beans / 1000
+			crates = jars / 100
+			return jelly_beans, jars, crates
+
+
+start_point = 10000
+beans, jars, crates = secret_formula(start_point)
+
+**See above how "started" becomes start_point and jelly_beans becomes "beans"
+
+7) return - returns a value/s from a function
